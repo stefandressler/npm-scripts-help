@@ -1,18 +1,24 @@
 {
   "name": "npm-scripts-help",
-  "version": "0.7.0",
-  "description": "lists the available npm scrips with option to add description to any script.",
+  "version": "0.7.1",
+  "description": "forked from https://github.com/talarari/npm-scripts-help - lists the available npm scrips with option to add description to any script.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/talarari/npm-scripts-help.git"
+    "url": "git+https://github.com/stefandressler/npm-scripts-help.git"
   },
   "author": "talarari <talarari@gmail.com>",
+  "contributors": [
+    "Stefan Dressler <epost@clixwork.eu>"
+  ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/talarari/npm-scripts-help/issues"
+    "url": "https://github.com/stefandressler/npm-scripts-help/issues"
   },
-  "homepage": "https://github.com/talarari/npm-scripts-help#readme",
+  "homepage": "https://github.com/stefandressler/npm-scripts-help#readme",
+  "scripts": {
+    "help": "node index.js"
+  },
   "dependencies": {
     "chalk": "^1.1.3"
   }
