@@ -5,7 +5,7 @@ const scripts = packageJson.scripts || {};
 const scriptsHelpConfig = getScriptsHelpConfig();
 const search = specificScript = process.argv[2];
 
-if (scriptsHelpConfig['help-message']) {
+if (scriptsHelpConfig['man-message']) {
   console.log('======================================================================');
   console.log('                                             .__        __          ');
   console.log('   ____ ______   _____     ______ ___________|__|______/  |_  ______');

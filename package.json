@@ -1,6 +1,6 @@
 {
   "name": "npm-scripts-man",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "forked from https://github.com/talarari/npm-scripts-help - lists the available npm scrips with option to add description to any script.",
   "main": "index.js",
   "repository": {
