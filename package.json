@@ -1,11 +1,11 @@
 {
-  "name": "npm-scripts-help",
-  "version": "0.7.1",
+  "name": "npm-scripts-man",
+  "version": "0.7.2",
   "description": "forked from https://github.com/talarari/npm-scripts-help - lists the available npm scrips with option to add description to any script.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stefandressler/npm-scripts-help.git"
+    "url": "git+https://github.com/stefandressler/npm-scripts-man.git"
   },
   "author": "talarari <talarari@gmail.com>",
   "contributors": [
@@ -13,11 +13,11 @@
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/stefandressler/npm-scripts-help/issues"
+    "url": "https://github.com/stefandressler/npm-scripts-man/issues"
   },
-  "homepage": "https://github.com/stefandressler/npm-scripts-help#readme",
+  "homepage": "https://github.com/stefandressler/npm-scripts-man#readme",
   "scripts": {
-    "help": "node index.js"
+    "man": "node index.js"
   },
   "dependencies": {
     "chalk": "^1.1.3"

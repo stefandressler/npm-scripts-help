@@ -6,6 +6,7 @@ const scriptsHelpConfig = getScriptsHelpConfig();
 const search = specificScript = process.argv[2];
 
 if (scriptsHelpConfig['help-message']) {
+  console.log('======================================================================');
   console.log('                                             .__        __          ');
   console.log('   ____ ______   _____     ______ ___________|__|______/  |_  ______');
   console.log('  /    \\\\____ \\ /     \\   /  ___// ___\\_  __ \\  \\____ \\   __\\/  ___/');
@@ -13,11 +14,11 @@ if (scriptsHelpConfig['help-message']) {
   console.log(' |___|  /   __/|__|_|  / /____  >\\___  >__|  |__|   __/|__| /____  >');
   console.log('      \\/|__|         \\/       \\/     \\/         |__|             \\/ ');
   console.log(' ');
-  console.log(`${packageJson.name} ${packageJson.version} (node ${process.version}-generic i686)`);
-  console.log('Copyright (c) 2016 Open Source Community and/or its affiliates. Some rights reserved.');
-  console.log('=====================================================================================');
+  console.log(`${packageJson.name} ${packageJson.version} (forked from talarari/npm-scripts-help)`);
+  console.log('Copyright (c) 2016 Open Source Community and/or its affiliates.');
+  console.log('======================================================================');
   console.log(' ');
-  console.log(getDesc(scriptsHelpConfig['help-message']));
+  console.log(getDesc(scriptsHelpConfig['man-message']));
   console.log(' ');
 }
 
@@ -79,17 +80,16 @@ function getDesc(line) {
   return '';
 }
 
-
 function formatMultiLine(multiline) {
   return multiline.join('\n') + '\n';
 }
 
 function getScriptsHelpConfig() {
   try {
-    return require(process.cwd() + '/.scriptshelprc.js');
+    return require(process.cwd() + '/.scriptsmanrc.js');
   }
   catch (err) {
-    return packageJson['scriptshelp'] || {};
+    return packageJson['scriptsman'] || {};
   }
 
 }
